@@ -21,6 +21,20 @@
     display: none;
   }
 
+  .sk8-1:hover,
+  .sk8-2:hover,
+  .sk8-3:hover,
+  .sk8-4:hover,
+  .sk8-5:hover,
+  .sk8-6:hover,
+  .sk8-7:hover,
+  .sk8-8:hover,
+  .sk8-9:hover,
+  .sk8-10:hover {
+    transform: none;
+    border-bottom: none;
+  }
+
   header .container .social-container {
     width: 100%;
   }
