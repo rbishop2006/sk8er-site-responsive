@@ -1,0 +1,69 @@
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/assets/bg.jpg) no-repeat 79% 100% / cover;
+    background-size: 2600px;
+  }
+  .wrapper {
+    max-width: 768px;
+    text-align: center;
+  }
+  .hidden-left,
+  .hidden-right,
+  .subscribe,
+  .social-container li.nav-facebook-shadow,
+  .social-container li.nav-instagram-shadow,
+  .social-container li.nav-twitter-shadow,
+  .social-container li.nav-youtube-shadow,
+  section.large-grid,
+  section.large-img,
+  section.large-img-shadow {
+    display: none;
+  }
+
+  header .container .social-container {
+    width: 100%;
+  }
+  header .container .social-container ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  div .logo-tablet {
+    height: 300px;
+    width: 100%;
+    background: url("/assets/peralta-logo.png") no-repeat center center/cover;
+    background-size: 500px;
+    margin-top: 30px;
+  }
+  section.articles {
+    grid-template-columns: 1fr;
+  }
+
+  section.articles {
+    margin-top: 30px;
+  }
+
+  .articles .info {
+    height: 250px;
+  }
+
+  .gallery {
+    grid-template-areas:
+      "lance rodney"
+      "tommy steve";
+    grid-gap: 0;
+  }
+  .skaters {
+    margin: 10px;
+  }
+  #skateboards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: auto;
+  }
+}

@@ -1,0 +1,556 @@
+:root {
+  --primary-color: rgb(167, 54, 52);
+  --secondary-red: rgb(255, 43, 38);
+  --border-color: rgb(251, 251, 251);
+  --light-text-color: rgb(210, 207, 204);
+  --dark-text-color: rgb(77, 77, 77);
+  --shadow-color: rgba(172, 172, 172, 0.5);
+  --white: rgb(253, 253, 253);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/bg.jpg) no-repeat 33% 1% / cover;
+  background-size: 2000px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  margin: 25px auto;
+  width: 900px;
+  height: auto;
+}
+
+/* Header */
+
+header {
+  margin-bottom: 0.75rem;
+}
+
+header .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Subscribe */
+
+.subscribe h3 {
+  color: var(--light-text-color);
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-right: 3px;
+  font-size: 0.9rem;
+}
+.subscribe h3:hover {
+  color: var(--white);
+}
+
+/* Hidden divs */
+.hidden-left {
+  margin-left: 5px;
+  background: transparent;
+  border-left: dotted 3px var(--border-color);
+  width: 15px;
+  height: 3px;
+}
+.hidden-right {
+  background: transparent;
+  border-right: dotted 3px var(--border-color);
+  width: 50px;
+  height: 30px;
+}
+
+/* Social */
+
+.social-container ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+.social-container ul li .fab {
+  width: 50px;
+  height: 50px;
+  margin: 0.3rem 0 0 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(149, 169, 208);
+}
+
+.social-container ul li .fab:hover {
+  color: var(--white);
+  border-bottom: 3px solid var(--white);
+  transition: 0.2s;
+}
+
+.social-container ul li i {
+  font-size: 1.8rem;
+}
+.social-container ul li .fa-facebook-f {
+  background: rgb(71, 89, 147);
+}
+.social-container ul li .fa-instagram {
+  background: rgb(196, 145, 69);
+}
+.social-container ul li .fa-twitter {
+  background: rgb(112, 142, 192);
+}
+.social-container ul li .fa-youtube {
+  background: rgb(165, 65, 52);
+}
+
+.social-container li.nav-facebook-shadow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: var(--shadow-color);
+  top: 8px;
+  left: 11px;
+  z-index: -1;
+}
+.social-container li.nav-instagram-shadow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: var(--shadow-color);
+  top: 8px;
+  left: 73px;
+  z-index: -1;
+}
+.social-container li.nav-twitter-shadow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: var(--shadow-color);
+  top: 8px;
+  left: 134px;
+  z-index: -1;
+}
+.social-container li.nav-youtube-shadow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: var(--shadow-color);
+  top: 8px;
+  left: 195px;
+  z-index: -1;
+}
+
+/* Navigation */
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  grid-gap: 10px;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav div {
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 3px solid rgba(172, 172, 172);
+}
+
+nav a div p:hover {
+  color: var(--white);
+}
+
+nav a div:hover {
+  border-bottom: 3px solid var(--white);
+}
+
+nav div p {
+  padding: 10px;
+  line-height: 1.4;
+  color: var(--light-text-color);
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+nav div .h-line {
+  height: 2px;
+  width: 10px;
+  background: var(--light-text-color);
+}
+
+/* Large Image */
+
+section.large-img {
+  margin-top: 15px;
+  border: 10px solid var(--white);
+  background: url("../assets/top-image.png") no-repeat 46% 27% / cover;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  background-size: 1400px;
+}
+section.large-grid {
+  border: 10px solid var(--white);
+  background: url("../assets/grid.png") no-repeat 46% 27% / cover;
+  height: 300px;
+  width: inherit;
+  position: absolute;
+  top: 152px;
+  opacity: 0.2;
+  background-size: 1500px;
+}
+
+section.large-img-shadow {
+  position: absolute;
+  width: inherit;
+  height: 200px;
+  top: 256px;
+  background: var(--shadow-color);
+
+  z-index: -1;
+}
+
+img.logo {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  transform: rotate(-2deg);
+  z-index: 2;
+}
+
+/* Radios */
+
+.radios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.radios input {
+  margin: 0 5px;
+}
+
+/* Articles */
+
+section.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+}
+
+.articles .info {
+  background: var(--white);
+  height: 340px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 3px solid rgba(172, 172, 172);
+}
+.articles .info a {
+  text-decoration: none;
+}
+
+.articles .info a p:hover {
+  color: var(--secondary-red);
+}
+
+.articles .info .text {
+  overflow: hidden;
+}
+
+.articles .info h3 {
+  color: var(--dark-text-color);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.articles .info .dates {
+  font-size: 0.8rem;
+  margin: 5px 0;
+  color: var(--light-text-color);
+  font-weight: 500;
+}
+
+.articles .info .text {
+  color: var(--dark-text-color);
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.articles .info .read-more {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+/* Skaters */
+
+.gallery {
+  display: grid;
+  grid-template-areas:
+    "lance rodney tommy"
+    "steve steve tommy";
+
+  height: 500px;
+  width: 100%;
+  grid-gap: 10px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.gallery::before {
+  content: "SKATEBOARDERS";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--white);
+  width: 200px;
+  height: 80px;
+  background: var(--primary-color);
+  position: absolute;
+  top: 100px;
+  left: 10;
+  right: 10;
+  left: -240px;
+}
+
+.gallery::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: -40px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 0 40px 25px;
+  border-color: transparent transparent transparent #a83634;
+}
+
+.gallery .skaters {
+  border: 5px solid var(--white);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.gallery .lance {
+  background: url("../assets/sk8er-4.png") no-repeat 90% 55% / cover;
+  grid-area: lance;
+}
+.gallery .rodney {
+  background: url("../assets/sk8er-3.png") no-repeat 15% 50% / cover;
+  grid-area: rodney;
+}
+.gallery .tommy {
+  background: url("../assets/sk8er-2.png") no-repeat 80% 50% / cover;
+  grid-area: tommy;
+}
+.gallery .steve {
+  background: url(../assets/sk8er-1.png) no-repeat 10% 65% / cover;
+  grid-area: steve;
+  background-size: 709px;
+}
+
+.gallery .skaters:hover {
+  outline: 0.5px solid var(--white);
+  color: var(--white);
+  text-shadow: 1px 1px var(--light-text-color);
+}
+
+/* Skateboards */
+
+#skateboards {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 300px;
+  width: 100%;
+  margin-top: 30px;
+  border: 5px solid var(--white);
+  background: var(--white);
+}
+
+.sk8-1:hover,
+.sk8-2:hover,
+.sk8-3:hover,
+.sk8-4:hover,
+.sk8-5:hover,
+.sk8-6:hover,
+.sk8-7:hover,
+.sk8-8:hover,
+.sk8-9:hover,
+.sk8-10:hover {
+  transform: scale(1.1);
+  border-bottom: 3px solid var(--secondary-red);
+  transition: all 1s;
+}
+
+#skateboard-section {
+  position: relative;
+}
+
+#skate-boards-shadow {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: var(--shadow-color);
+  top: 103px;
+  z-index: -1;
+}
+
+/* Footer */
+
+#contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 300px;
+  border: 5px solid var(--white);
+  padding: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background: var(--white);
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+  color: var(--dark-text-color);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.contact-info p {
+  line-height: 1.85rem;
+  margin-bottom: 15px;
+  color: var(--dark-text-color);
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.contact-info .footer-social ul {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.contact-info .footer-social ul li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.contact-info .footer-social ul li i {
+  color: var(--light-text-color);
+}
+
+.contact-info .footer-social ul li i:hover {
+  color: var(--white);
+}
+
+.contact-info .footer-social ul li:hover {
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: 0.2s;
+}
+
+.contact-info .footer-social ul li:first-child {
+  background: rgb(79, 79, 79);
+}
+
+.contact-info .footer-social ul li:nth-child(2) {
+  background: rgb(174, 174, 174);
+}
+
+.contact-info .footer-social ul li:nth-child(3) {
+  background: rgb(122, 122, 122);
+}
+
+.contact-info .footer-social ul li:last-child {
+  background: rgb(117, 117, 117);
+}
+
+.contact-form {
+  display: grid;
+  grid-template-rows: 5fr;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form form input {
+  display: block;
+  height: 35px;
+  border-top: 3px solid rgb(174, 174, 174);
+  border-left: 3px solid rgb(174, 174, 174);
+  border-bottom: 1px solid var(--light-text-color);
+  border-right: 1px solid var(--light-text-color);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contact-form form input:focus {
+  outline: none;
+}
+
+.contact-form form textarea {
+  height: 80px;
+  border-top: 3px solid rgb(174, 174, 174);
+  border-left: 3px solid rgb(174, 174, 174);
+  border-bottom: 1px solid var(--light-text-color);
+  border-right: 1px solid var(--light-text-color);
+  padding: 10px;
+  resize: none;
+  cursor: pointer;
+}
+
+.contact-form form textarea:focus {
+  outline: none;
+}
+
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder,
+.contact-form input.submit {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--light-text-color);
+}
+
+.contact-form input.submit {
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  justify-self: end;
+  background: var(--primary-color);
+  border: none;
+}
+.contact-form input.submit:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
