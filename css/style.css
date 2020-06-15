@@ -57,6 +57,7 @@ header .container a {
 }
 
 /* Hidden divs */
+
 .hidden-left {
   margin-left: 5px;
   background: transparent;
@@ -71,7 +72,7 @@ header .container a {
   height: 30px;
 }
 
-/* Social */
+/* Social Links */
 
 .social-container ul {
   display: flex;
@@ -303,7 +304,7 @@ section.articles {
   font-weight: 900;
 }
 
-/* Skaters */
+/* Skater Gallery */
 
 .gallery {
   display: grid;
@@ -382,7 +383,7 @@ section.articles {
   text-shadow: 1px 1px var(--light-text-color);
 }
 
-/* Skateboards */
+/* Skateboard Designs */
 
 #skateboards {
   display: grid;

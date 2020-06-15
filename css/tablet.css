@@ -8,6 +8,10 @@
     max-width: 768px;
     text-align: center;
   }
+
+  /* Items Removed from view */
+
+  header .container,
   .hidden-left,
   .hidden-right,
   .subscribe,
@@ -20,6 +24,8 @@
   section.large-img-shadow {
     display: none;
   }
+
+  /* Hover effects disabled */
 
   .sk8-1:hover,
   .sk8-2:hover,
@@ -35,6 +41,8 @@
     border-bottom: none;
   }
 
+  /* Header */
+
   header .container .social-container {
     width: 100%;
   }
@@ -43,9 +51,13 @@
     justify-content: space-around;
   }
 
+  /* Navigation */
+
   nav {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Displaying Logo */
 
   div .logo-tablet {
     height: 300px;
@@ -54,6 +66,9 @@
     background-size: 500px;
     margin-top: 30px;
   }
+
+  /* Articles */
+
   section.articles {
     grid-template-columns: 1fr;
   }
@@ -66,6 +81,8 @@
     height: 250px;
   }
 
+  /* Skaters Gallery */
+
   .gallery {
     grid-template-areas:
       "lance rodney"
@@ -75,9 +92,40 @@
   .skaters {
     margin: 10px;
   }
+
+  /* Skateboard Designs */
+
   #skateboards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     height: auto;
+  }
+
+  /* Footer */
+
+  .contact-info .footer-social ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  #contact .contact-info .footer-social ul li {
+    height: 50px;
+    width: 50px;
+  }
+
+  .contact-info .footer-social ul li:first-child {
+    background: rgb(71, 89, 147);
+  }
+
+  .contact-info .footer-social ul li:nth-child(2) {
+    background: rgb(196, 145, 69);
+  }
+
+  .contact-info .footer-social ul li:nth-child(3) {
+    background: rgb(112, 142, 192);
+  }
+
+  .contact-info .footer-social ul li:last-child {
+    background: rgb(165, 65, 52);
   }
 }
