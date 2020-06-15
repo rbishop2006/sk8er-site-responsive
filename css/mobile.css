@@ -40,7 +40,7 @@
 
   header::after {
     content: " ";
-    background: url("/assets/peralta-logo.png") no-repeat center center/cover;
+    background: url("../assets/peralta-logo.png") no-repeat center center/cover;
     display: block;
     height: 300px;
     width: auto;
