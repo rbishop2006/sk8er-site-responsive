@@ -41,6 +41,10 @@ header .container {
 
 /* Subscribe */
 
+header .container a {
+  text-decoration: none;
+}
+
 .subscribe h3 {
   color: var(--light-text-color);
   text-transform: uppercase;
