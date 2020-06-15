@@ -128,6 +128,14 @@
 
   /* Footer */
 
+  #contact .contact-info .footer-social {
+    width: 100%;
+  }
+  #contact .contact-info .footer-social ul {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
   .contact-us-flag::after {
     content: "CONTACT US";
     color: var(--white);
